@@ -62,6 +62,7 @@ body{
 /*Imagen de perfil*/
 .contenedor-imagen{
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     
 }
@@ -78,7 +79,7 @@ body{
 .secion{
     position: relative;
     display: flex;
-   
+   flex-direction: row;
 
 }
 /*.imagen{
@@ -110,24 +111,33 @@ body{
 
 
 .parrafo-1{
-    position: relative;
     display: flex;
-    justify-content: center;
     height: 1px;
-    font-size: 40px;
-    padding: 1rem 1.5rem;
-    margin: 10px 40px;
-    align-items: center;
+    /* font-size: 40px; */
+    /* padding: 1rem 1.5rem; */
+    margin: 10px 70px;
+    align-items: flex-end;
+    margin-left: 59px;
+    /* flex-direction: row; */
+    font-size: 32px;
+}
     
+
+
+.parrafo-2{
+    position: absolute;
+    /* display: flex; */
+    /* height: 0px; */
+    flex-direction: row;
+    margin: -26px 150px;
+    font-size: 20px;
+    color: var(--color-4);
 }
 
-/*.parrafo-2{
-    color: var(--color-2);
-    font-size: 24px;
-    margin: 45px 60px;
-}
+
 #firt-span{
     color: var(--color-1);
+
 }
 /*FIN DE SECION*/
 
@@ -137,13 +147,10 @@ body{
 
 
 /*INICIO DE ICONOS*/
-/*.iconos{
+.iconos{
     display: flex;
+    flex-direction: row;
     margin: 9vh 30vh;
-    /* position: absolute; */
-   /* flex-direction: row;
-    align-items: center;
-    width: 4px;
 }
 
 
@@ -153,8 +160,7 @@ body{
     border-radius: 1px 11px color;
     padding: 2.rem 0.5rem;
     padding: 1rem 0.5rem;
-    /* align-items: stretch; */
-    /*margin: 10px 10px;
+
     
 }
 /*FIN DE ICONOS*/
@@ -162,11 +168,20 @@ body{
 
 /*Incio del boton*/
 
-/*.contacto{
+.contenedor-contacto{
+    position: absolute;
     display: flex;
-    margin: 10vh 35vh;
-    max-width: 200px;
+    flex-direction: row;
+    align-items: center;
+    
 }
+.contacto{
+     display: flex;
+     margin: 10vh 35vh;
+      max-width: 200px;
+    top: 500px;
+}
+
 .contacto-btn{
     display: flex;
     padding-top: 15px;
@@ -182,15 +197,17 @@ body{
 .main{
     position: absolute;
     display: flex;
+    flex-direction: row;
     justify-content: end;
 }
 
 
 .secion{
-    position: relative;
+    position: absolute;
+    background-color: var(--color-3);
 }
 @media screen and (max-width: 400px) {
     .nav{
         position: static;
     }
-}*/
+}
