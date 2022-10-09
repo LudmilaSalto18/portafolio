@@ -11,71 +11,154 @@
 </head>
 
 <body>
-    <!-- Inicio del header --->
-    <header class="header">
-        <nav class="nav">
-            <a href="#">logo</a>
-            <ul class="nav-menu">
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link" id="item">Home</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link">Experencia y habilidades</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link">Portafolio</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link">Contacto</a></li>
-            </ul>
-        </nav>
-        <!--Imagen de perfil-->
-        <section>
-            <div class="contenedor-imagen">
-                <div class="imagen">
-                    <img src="./assets/img/310249319_5737495952973577_3107120327454402062_n.jpg" alt="fotodeperfil"
-                        class="imagen-1" height="450px">
+
+    <nav class="nav">
+            
+        <ul class="nav-menu">
+            <li class="nav-menu-item"><a href="#" class="nav-menu-link" id="item">Home</a></li>
+            <li class="nav-menu-item"><a href="#" class="nav-menu-link">Experencia y habilidades</a></li>
+            <li class="nav-menu-item"><a href="#" class="nav-menu-link">Portafolio</a></li>
+            <li class="nav-menu-item"><a href="#" class="nav-menu-link">Contacto</a></li>
+            <input type="checkbox" id="hamburgesa" class="cheeck" >
+            <label class="menu" for="hamburgesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+            </svg>
+            </label>
+        </ul>
+    </nav>
+    <!--Imagen de perfil-->
+    <section>
+        <div class="presentacion">
+            <div class="presentacion-tarjeta">
+                <div class="presentacion_descripcion">
+                    <h1>Ludmila Salto</h1>
+                    <h4>Estudiante de Desarrollador Full Stack y Ciencias de la Computacion</h4>
+                    <p><span>+5 años </span>de experiencia</p>
+                    <div class="presentacion-iconos">
+                        <img src="./assets/iconos/instagram.svg" alt="instagram">
+                        <img src="./assets/iconos/twitter.svg" alt="twitter"></img>
+                        <img src="./assets/iconos/airbnb.svg" alt="airbn"></img>
+                    </div>
+                    <button class="contacto-btn"><img src="/assets/iconos/mail 1.svg" alt="">
+                        Contactame
+                    </button>
                 </div>
             </div>
-        </section>
-
-        <div class="contenedor-informacion">
-            <div class="nombre-h1">
-                <h1>Ludmila Salto</h1>
+            <div class="presentacion-foto">
+                <img src="./assets/img/310249319_5737495952973577_3107120327454402062_n.jpg" alt="fotodeperfil">
             </div>
-            <div class="parrafo-1">
-                <p>Estudiante de Desarrollador Full Stack</p>
-            </div>
-            <div class="parrafo-2">
-                <p><span id="firt-span">+5 años</span> de experiencia</p>
-            </div>
-
-
-            <div class="iconos">
-                <img src="./assets/iconos/instagram.svg" alt="instagram" class="icons">
-                <img src="./assets/iconos/twitter.svg" alt="twitter" class="icons"></img>
-                <img src="./assets/iconos/airbnb.svg" alt="mail" class="icons"></img>
-            </div>
-
-
-            <div class="contacto">
-                <button class="contacto-btn"><img class="contacto-btn" src="/assets/iconos/mail 1.svg" alt="">
-                    Contactame </button>
-            </div>
-            <div>
-
-
-
-
-    </header>
-
-
-
+    </section>
 
     <!--Experencia y habilidades-->
-
-
-    <section class="secion">
-        <div>
-            <h3>Experencia y habilidades</h3>
-            <p>Lorem ipsum dolor sit.</p>
+    <main class="principal">
+        <div class="principal-experiencia">
+            <div class="experiencia-izq">
+                <h2>Experencia y habilidades </h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis quibusdam facilis quam nemo
+                    dolorem similique vitae doloribus eaque, vero harum!</p>
+            </div>
+            <div class="experiencia-dcho">
+                <h4>Experencia</h4>
+                <ul>
+                    <li class="listas">
+                        <p>2016-2018</p>
+                        <div>
+                            <p class="lista-color">Visual designer</p>
+                            <p>Wizeline</p>
+                        </div>
+                    </li>
+                    <li class="listas">
+                        <p>2018-2019</p>
+                        <div>
+                            <p class="lista-color">Product designer</p>
+                            <p>Microsoft</p>
+                        </div>
+                    </li>
+                    <li class="listas">
+                        <p>2019-2021</p>
+                        <div>
+                            <p class="lista-color"> UI engineer</p>
+                            <p>Google </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </section>
+        <div class="principal-habilidades">
+            <h4>Habilidades</h4>
+            <div class="principales_guion_habilidades_iconos"><svg width="56" height="56" viewBox="0 0 56 56"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M48.125 6.125H7.875C6.90703 6.125 6.125 6.90703 6.125 7.875V48.125C6.125 49.093 6.90703 49.875 7.875 49.875H48.125C49.093 49.875 49.875 49.093 49.875 48.125V7.875C49.875 6.90703 49.093 6.125 48.125 6.125ZM20.125 40.6875C20.125 40.9281 19.9281 41.125 19.6875 41.125H15.3125C15.0719 41.125 14.875 40.9281 14.875 40.6875V15.3125C14.875 15.0719 15.0719 14.875 15.3125 14.875H19.6875C19.9281 14.875 20.125 15.0719 20.125 15.3125V40.6875ZM30.625 25.375C30.625 25.6156 30.4281 25.8125 30.1875 25.8125H25.8125C25.5719 25.8125 25.375 25.6156 25.375 25.375V15.3125C25.375 15.0719 25.5719 14.875 25.8125 14.875H30.1875C30.4281 14.875 30.625 15.0719 30.625 15.3125V25.375ZM41.125 29.3125C41.125 29.5531 40.9281 29.75 40.6875 29.75H36.3125C36.0719 29.75 35.875 29.5531 35.875 29.3125V15.3125C35.875 15.0719 36.0719 14.875 36.3125 14.875H40.6875C40.9281 14.875 41.125 15.0719 41.125 15.3125V29.3125Z"
+                        fill="#423F40" />
+                </svg>
+                <p>Movile app desings</p>
+            </div>
+            <div class="principales_guion_habilidades_iconos"> <svg width="56" height="56" viewBox="0 0 56 56"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M48.9999 28C48.9999 23.2633 47.4366 18.8767 44.3333 14.8867V41.1367C47.4366 37.2633 48.9999 32.8767 48.9999 28ZM41.1366 44.3333H14.8866C16.4733 45.6167 18.5499 46.6667 21.1166 47.6233C23.6599 48.5333 25.9699 49 27.9999 49C30.0533 49 32.3399 48.5333 34.8833 47.6233C37.4499 46.6667 39.5266 45.6167 41.1366 44.3333ZM25.6666 39.6667L16.3333 21V39.6667H25.6666ZM39.6666 21L30.3333 39.6667H39.6666V21ZM27.9999 33.9033L36.7499 16.3333H19.2499L27.9999 33.9033V33.9033ZM41.1366 11.6667C37.2632 8.56334 32.8766 7 27.9999 7C23.1233 7 18.7366 8.56334 14.8866 11.6667H41.1366ZM11.6666 41.1367V14.8867C8.56325 18.8767 6.99992 23.2633 6.99992 28C6.99992 32.8767 8.56325 37.2633 11.6666 41.1367ZM53.6666 28C53.6666 35.07 51.1933 41.1367 46.1533 46.1533C41.1366 51.1933 35.0699 53.6667 27.9999 53.6667C20.9299 53.6667 14.8866 51.1933 9.84658 46.1533C4.80658 41.1367 2.33325 35.07 2.33325 28C2.33325 20.93 4.80658 14.8867 9.84658 9.84667C14.8866 4.80667 20.9299 2.33334 27.9999 2.33334C35.0699 2.33334 41.1366 4.80667 46.1533 9.84667C51.1933 14.8867 53.6666 20.93 53.6666 28Z"
+                        fill="#423F40" />
+                </svg>
+                <p>Gestion de proyectos</p>
+            </div>
+            <div class="principales_guion_habilidades_iconos">
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M40.6875 3.39062H15.3125C13.382 3.39062 11.8125 4.96016 11.8125 6.89062V48.8906C11.8125 50.8211 13.382 52.3906 15.3125 52.3906H40.6875C42.618 52.3906 44.1875 50.8211 44.1875 48.8906V6.89062C44.1875 4.96016 42.618 3.39062 40.6875 3.39062ZM28 45.0625C26.7914 45.0625 25.8125 44.0836 25.8125 42.875C25.8125 41.6664 26.7914 40.6875 28 40.6875C29.2086 40.6875 30.1875 41.6664 30.1875 42.875C30.1875 44.0836 29.2086 45.0625 28 45.0625Z"
+                        fill="#423F40" />
+                </svg>
+                <p>Creacion de mantenimiento de sistema de diseños</p>
+            </div>
+            <div class="principales_guion_habilidades_iconos">
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.3334 30.3333H7.00008C5.71675 30.3333 4.66675 29.2833 4.66675 28C4.66675 26.7167 5.71675 25.6667 7.00008 25.6667H16.3334C17.6167 25.6667 18.6667 26.7167 18.6667 28C18.6667 29.2833 17.6167 30.3333 16.3334 30.3333ZM14.0001 18.6667C14.0001 17.3833 12.9501 16.3333 11.6667 16.3333H9.33342C8.05008 16.3333 7.00008 17.3833 7.00008 18.6667C7.00008 19.95 8.05008 21 9.33342 21H11.6667C12.9501 21 14.0001 19.95 14.0001 18.6667ZM51.3334 28C51.3334 34.44 46.1068 39.6667 39.6668 39.6667H9.33342C8.05008 39.6667 7.00008 38.6167 7.00008 37.3333C7.00008 36.05 8.05008 35 9.33342 35H30.3334C29.3534 33.6467 28.5834 32.06 28.2334 30.3333H23.3334C22.0501 30.3333 21.0001 29.2833 21.0001 28C21.0001 26.7167 22.0501 25.6667 23.3334 25.6667H28.2334C28.5834 23.94 29.3534 22.3533 30.3334 21H18.6667C17.3834 21 16.3334 19.95 16.3334 18.6667C16.3334 17.3833 17.3834 16.3333 18.6667 16.3333H39.6668C46.1068 16.3333 51.3334 21.56 51.3334 28Z"
+                        fill="#423F40" />
+                </svg>
+                <p>Motion desing</p>
+            </div>
+        </div>
     </main>
 
+
+    <section class="portafolio">
+        <h2>Portafolio</h2>
+        <div class="foto-porta">
+            <div class="portafolio-img">
+                <p>Beauty app</p>
+                <img src="/assets/img/ejemplo 1.png" alt="ejemplo-1">
+            </div>
+            <div class="portafolio-img">
+                <p> Training app </p>
+                <img src="./assets/img/ejemplo 2.png" alt="ejemplo-2">
+            </div>
+            <div class="portafolio-img">
+                <p>Hotel app</p>
+                <img src="./assets/img/ejemplo 3.png" alt="ejemplo-3">
+            </div>
+        </div>
+    
+
+        <footer class="contacto">
+            <h2>Contacto</h2>
+            <div class="contacto-tarjeta">
+                <div class="comunicacion">
+                   <img src="./assets/img/phone.svg" alt="telefono">
+                    <p >Numero de celular</p>
+                    <h5>2254595927</h5>
+                </div>
+                <div class="comunicacion">
+                    <img src="./assets/img/mail.svg" alt="mail">
+                    <p>Email</p>
+                    <h5>ludmilasalto5@gmail.com</h5>
+                </div>
+            </div>
+            <p><span>Hecho con ♥ en Academlo</span></p>
+        </footer>
+    </section>
 </body>
 
 </html>
