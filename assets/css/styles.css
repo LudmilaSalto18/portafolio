@@ -15,7 +15,7 @@ body{
 .header{
     background-color:fffff;
     height: 80px;
-    position: fixed;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
@@ -98,6 +98,7 @@ body{
 
 /*Mi nombre*/
 .nombre-h1{
+    position: relative;
     display: flex;
     flex-direction: row;
     padding: 1rem 1.5rem;
@@ -125,7 +126,7 @@ body{
 
 
 .parrafo-2{
-    position: absolute;
+    position: relative;
     /* display: flex; */
     /* height: 0px; */
     flex-direction: row;
@@ -148,9 +149,10 @@ body{
 
 /*INICIO DE ICONOS*/
 .iconos{
-    display: flex;
     flex-direction: row;
-    margin: 9vh 30vh;
+    /* margin: 9vh 30vh; */
+    margin: 5px 122px;
+    padding: 1rem 1.5rem;
 }
 
 
@@ -169,7 +171,7 @@ body{
 /*Incio del boton*/
 
 .contenedor-contacto{
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -198,13 +200,12 @@ body{
     position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content:start;
 }
 
 
 .secion{
-    position: absolute;
-    background-color: var(--color-3);
+   background-color: var(--color-3);
 }
 @media screen and (max-width: 400px) {
     .nav{
