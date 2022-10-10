@@ -46,7 +46,9 @@ h1{
 h4{
     font-size: 25px;
 }
-
+#item{
+    color: var(--color-1);
+}
 .lista-color{
     font-weight: 800;
 }
@@ -61,15 +63,22 @@ h4{
 
 }
 
-.menu:checked{
-   
+#hambursea:checked{
+    transition: all .25s;
 }
+
+#hamburgesa{
+    visibility: hidden;
+}
+  
 @media screen and (min-width:280px) {
     .nav-menu > li{
         display: none;
     }
 }
-
+#hamburgesa:checked{
+    display: block;
+}
 @media screen and (min-width:780px) {
     .nav-menu > li{
         display: flex;
